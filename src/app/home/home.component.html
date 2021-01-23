@@ -1,0 +1,76 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Pizzavala</a> -->
+<nav style="background-color:#222;" class="navbar navbar-expand-lg">
+    <script src="canvasjs/dist/canvasjs.js"></script>
+    <div class="logo"></div>
+    <a style="color: whitesmoke;font-style: italic;font-size: 25px; margin-left: 100px;" class="navbar-brand" routerLink="/home/product/gallery">Pizzavala</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home/product/gallery">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home/product/cart">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home/contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home/about-us">About Us</a>
+            </li>
+
+        </ul>
+        <div class="my-2 my-lg-0">
+            <!-- <button (click)="onLogout()" class="btn btn-outline-info my-2 my-sm-0">Logout</button> -->
+            <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-light" id="dropdownBasic1" ngbDropdownToggle>My Account</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <a style="color: black;" routerLink="/home/user/profile" ngbDropdownItem>Profile</a>
+                    <a style="color: black;" routerLink="/home/user/address-list" ngbDropdownItem>Addresses</a>
+                    <a style="color: black;" routerLink="/home/order/history" ngbDropdownItem>My Orders</a>
+                    <button (click)="onLogout()" ngbDropdownItem>Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container">
+    <!--
+    child level routing
+    - 
+  -->
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="panel-footer">
+    <div class="container">
+        <div class="row">
+            <section id="legal" class="col-md-3 col-sm-4 col-xs-12">
+                <span class="footer-span">LEGAL INFORMATION</span><br>
+                <a routerLink="/home/about-us">About Company</a><br>
+                <a routerLink="/home/disclaimer">Disclaimer</a><br>
+                <a routerLink="/home/terms-and-conditions">Terms and conditions</a><br>
+            </section>
+
+            <section id="social" class="col-md-3 col-sm-4 col-xs-12">
+                <span class="footer-span">FOLLOW US</span><br>
+                <a routerLink="#">Instagram</a><br>
+                <a routerLink="#">Facebook</a><br>
+                <a routerLink="#">Twitter</a><br>
+            </section>
+
+            <section id="address" class="col-md-3 col-sm-4 col-xs-12">
+                <span>ADDRESS</span><br> 203, Anuda Chambers, Shaniwar Peth, near Gujar Hospital, Karad,<br> Maharashtra 415110<br>
+            </section>
+        </div><br><br>
+    </div>
+    <div class="text-center">&copy; All rights reserved. PizzaVala Pizzas 2020.</div>
+</footer>

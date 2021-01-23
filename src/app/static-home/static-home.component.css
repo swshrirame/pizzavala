@@ -1,0 +1,40 @@
+/* .background {
+    background: url("../../../../images/profile.png");
+    background-image: url("../../../images/image_3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+.background {
+    background: url("../../../images/pizza-background-hd.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 665px;
+}
+
+.banner-title {
+    margin: 20px 80px;
+    color: white;
+}
+
+.banner-title h1 {
+    font-size: 45px;
+    margin-bottom: 34px;
+}
+
+.banner-title h1 span {
+    color: rgb(243, 189, 10);
+}
+
+
+/* background-image:linear-gradient(rgba(0, 0, 0, 0.6),
+rgba(0, 0, 0, 0.6)),
+url("../../../images/image_3.jpg"); */

@@ -1,0 +1,47 @@
+<div class="row">
+    <h3 class="header">Menu</h3>
+
+        <div class="form-group" style="margin: 26px;">
+      
+        <input [(ngModel)]="text" type="text" class="form-control" placeholder="Search">
+    </div>
+   
+     
+      
+    <div class="form-group" style="margin: 26px;">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input type="button" value="Search" (click)="DoSearch()" class="btn btn-primary">
+        </div>
+    </div>
+      
+    <!-- filter section -->
+    <div style="margin-left: 800px; margin-top: 40px;">
+        <div class="form">
+            <div class="form-group">
+                <label for="">Category</label>
+                <select (change)="filterProducts()" [(ngModel)]="category" class="form-control">
+        <option value="0">All</option>
+        <option [value]="category.id" *ngFor="let category of categories">{{category.title}}</option>
+        </select>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <!-- product section -->
+    <div class="col-md-12">
+        <h4 *ngIf="products.length == 0">There are no products matching this criteria</h4>
+        <div *ngIf="products.length > 0" class="row">
+            <div style="margin: 10px;" class="col-md-3 product" *ngFor="let product of products">
+                <img src="http://localhost:4100/pizza/image/{{product.imageFile}}" class="card-img-top" alt="...">
+                <h5 (click)="showProductDetails(product)">{{product.title}}</h5>
+                <div class="description">{{product.description}}</div>
+
+                <div class="category"><strong>Category: </strong> {{product.categoryTitle}}</div>
+                <div class="price"><strong>Price: </strong> {{product.price}}</div>
+                <button (click)="onAddToCart(product)" class="btn btn-sm btn-info btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

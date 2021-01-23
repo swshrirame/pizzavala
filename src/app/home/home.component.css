@@ -1,0 +1,70 @@
+#legal a:hover,
+#legal a:focus,
+#social a:hover,
+#social a:focus {
+    text-decoration: none;
+}
+
+.panel-footer {
+    background-color: #222;
+    margin-top: 50px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+#legal,
+#address,
+#social {
+    line-height: 2;
+    margin-left: 50px;
+}
+
+#address {
+    color: white;
+    margin-left: 50px;
+}
+
+#legal a,
+#social a {
+    color: white;
+}
+
+#legal span,
+#address span,
+#social span {
+    font-size: 20px;
+}
+
+.footer-span {
+    color: white;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.panel-footer {
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/* .logo {
+    background-image: url("../../../images/logo.png");
+    height: 50px;
+    width: 50px;
+    margin: 15px 10px 15px 0px;
+} */
+
+ .logo{
+    background-image:url('../../../images/logo.png');
+    background-position: center;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    position: absolute;
+    top: 5px;
+    /* left: calc(8%); */
+}

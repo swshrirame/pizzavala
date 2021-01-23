@@ -1,0 +1,28 @@
+
+<div class="bg-img">
+
+
+   
+    <div class="loginbox">
+      <div class="avatar1"></div>
+      <h1>Login Here</h1>
+    
+          <p>Email Address </p>
+
+          <input [(ngModel)]="email" type="email" class="form-control">
+          <p>Password</p>
+         
+          <input [(ngModel)]="password" type="password" class="form-control" >
+       
+          <button (click)="onSignin()" type="submit" style="width: 100%;">Signin</button>
+          <br>
+          <a routerLink="/auth/forget-password">
+            Forget password
+          </a>
+          <br>
+         
+          <a routerLink="/auth/signup" > New user ? RESISTER NOW</a>
+    
+    </div>
+    
+    </div>

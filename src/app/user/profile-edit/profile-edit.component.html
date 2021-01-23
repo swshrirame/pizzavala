@@ -1,0 +1,45 @@
+<div class="modal-header">
+    <h5>Update Profile</h5>
+</div>
+
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="">First Name</label>
+                <input [(ngModel)]="firstName" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="">Last Name</label>
+                <input [(ngModel)]="lastName" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input [(ngModel)]="email" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="">Phone</label>
+                <input [(ngModel)]="phone" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+
+  
+
+</div>
+
+<div class="modal-footer">
+    <button (click)="onUpdate()" class="btn btn-info">Update</button>
+    <button (click)="onCancel()" class="btn btn-danger">Cancel</button>
+</div>
